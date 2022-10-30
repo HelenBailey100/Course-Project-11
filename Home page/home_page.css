@@ -165,11 +165,34 @@ h1{
 
 /*Collection start*/
 
+.collection{
+display:flex;
+}
+
 .collection-image{
-border-style:ridge; border-width: 15px;
-height: 180px;
-width: 350px;
-margin:4vw;
+border-style:ridge; border-width: 20px;
+height: 300px;
+width: 400px;
+margin:0;
+}
+
+.row1{
+  display:block;
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.column1{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 /*Collection end*/
@@ -244,15 +267,23 @@ p{
 /*footer start*/
 .footer{
     display: flex;
-    position:relative;
     align-items:center;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 2px;
     height:auto;
     background-color: rgb(181, 173, 157);
     color: rgb(0, 0, 0);
-    height: 4.5rem;
     width:100%;
+    position:relative;
+    right:0;
+    bottom:0;
+    left:0;
+    padding: 1rem;
+}
+
+.social_incon {
+  color:bisque;
+  font-size:large;
 }
  
   .footer a {
